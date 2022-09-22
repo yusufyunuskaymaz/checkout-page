@@ -49,6 +49,25 @@ const calculateProductsPrice = (clickedBtn) => {
   const productInfoDiv = clickedBtn.parentElement.parentElement;
   // console.log(productInfoDiv)
   const price = productInfoDiv.querySelector(".product-price strong").innerText;
+  const quantity = productInfoDiv.querySelector(".quantity").innerText
+  const productTotalDiv = productInfoDiv.querySelector(".product-line-price")
+  productTotalDiv.innerText = (price * quantity).toFixed(2)
+
 };
 
-const calculateCartPrice = () => {};
+const calculateCartPrice = () => {
+    const productsTotalPricesDiv = document.querySelectorAll(".product-line-price")
+    //! foreach ==> Nodelist, Array
+    // console.log(productsTotalPricesDiv)
+
+    let subTotal = 0
+
+    productsTotalPricesDiv.forEach(div => {
+        subTotal = subTotal + parseFloat(div.innerText)
+    })
+    // console.log(subTotal)
+    const taxPrice = subTotal * localStorage.getItem("taxRate")
+    const shippingPrice = (subTotal > 0 && subTotal < localStorage.getItem("shippingFreePrice") ? localStorage.getItem("shippingPrice") : 0)
+
+    console.log(shippingPrice)
+};
