@@ -6,20 +6,12 @@
 ## Description
 Project aims to create a real checkout page of e-commerce website.
 
-## Learning Outcomes
-
-At the end of the this project, students will be able to;
+At the end of the this project;
 
 - analyze a problem, create e-commerce website page.
 
 - demonstrate their knowledge of algorithmic design principles for dynamic calculation of product's cart.
 
-   
-## Problem Statement
-
-- You can use [Checkout_Page](https://github.com/clarusway/clarusway-full-stack-11-22/tree/main/html-css/projects/004-checkout-form) template for project.
-
-- Create a checkout page following the design and make the calculation of cart dynamically with using of DOM and Event in JS.
 
 ![Form](checkout_app.gif)
 
@@ -32,13 +24,8 @@ At the end of the this project, students will be able to;
    - When I change any combination of product chart(plus, minus, remove etc.), I want to see the new calculation of chart's prices in concerned fields.
 
 
-## Resources
 
-- [Images](./IMG/)
 
-- [Fonts](./FONTS/)
-
-- 🔥 You don’t need to create a new html template in this project, you can use [Checkout_Page](https://github.com/clarusway/clarusway-full-stack-10-21/tree/main/javascript/Projects/005-Checkout_Page/) template. We will be concerned in javascript side.
  
 
 
